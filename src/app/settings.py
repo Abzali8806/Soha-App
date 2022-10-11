@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 import psycopg2
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -87,11 +88,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'soha_app_db',
-        'USER':'postgres',
-        'PASSWORD': 'kilk8806',
-        'HOST': '172.17.0.1',
-        'PORT': ''
+        'NAME': config('db_name'),
+        'USER': config('db_user'),
+        'PASSWORD': config('db_pwd'),
+        'HOST': config('db_host'),
+        'PORT': config('db_port')
     }
 }
 
