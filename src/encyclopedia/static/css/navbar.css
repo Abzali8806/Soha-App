@@ -1,0 +1,84 @@
+nav {
+    /* font-family: 'Bree Serif', serif; */
+    background: steelblue;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main__nav {
+    width: 90%;
+    display: flex; 
+    align-items: center;
+    padding: 20px 0px 20px 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+}
+
+form {
+    width: 50%;
+    text-align: center;
+}
+form input {
+    height: 30px;
+    width: 50%;
+    padding: 0 10px ;
+    border-radius: 3px;
+}
+form .search__btn {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(37, 37, 37);
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+form .search__btn:hover {
+    background-color: #2D5373;
+}
+
+.nav__links {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.language__menu {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang__btn {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background: steelblue;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.lang__btn:hover {
+    color: rgb(63, 63, 63);
+    background: rgb(102, 158, 204);
+}
+

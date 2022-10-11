@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Search Results...</h1>
+    {% for article in articles %}
+        {% if query == article %}
+            <div class="article_container" id="results_container">
+                <div class="result__box">
+                    <h2>{{ article.title }}</h2>
+                    <small>{{ article.author }}</small>
+                    <p>{{ article.body }}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

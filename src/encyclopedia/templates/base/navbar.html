@@ -1,0 +1,19 @@
+
+<nav>
+    <div class="main__nav">
+        <div class="logo">
+            <a href="{% url 'home' %}" class="logo">SOHA.</a>
+        </div>
+        <form action="{% url 'results' %}">
+            <input class="search__input" type="text" placeholder="Search..." required name="query">
+            <input class="search__btn" type="submit">
+        </form>
+        <div class="nav__links">
+            <a href="{% url 'sandbox' %}" class="__links">Sandbox</a>
+            <a href="" class="login__link">Login</a>
+        </div>
+    </div>
+    <div class="language__menu">
+        <button class="lang__btn">Lang</button>
+    </div>
+</nav>

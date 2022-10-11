@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /* font-family: 'Bree Serif', serif; */
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container {
+    font-family: 'Bree Serif', serif;
+    background: white;
+    height: 100vh;
+}
+
+/* Header styling */
+
+header {
+    font-family: 'Bree Serif', serif;
+    background: #2D5373;
+    /* height: 100%; */
+}
+
+nav {
+    height: 10%;
+    width: 100%;
+    padding-right: 5px;
+    display: flex;
+}
+
+.nav__links {
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+.nav__links .link {
+    margin-left: 40px;
+}
+nav .btn {
+    color: white;
+    background: rgb(2, 155, 2);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto auto;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.hero {
+    height: 90%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+}
+
+.hero .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero__txt {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.hr {
+    letter-spacing: 3px;
+}
+
+.hr-1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.hr-3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.hr-2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    height: 70px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slogan span {
+    color: steelblue;
+    font-size: 2rem;
+    /* border: 2px solid white; */
+}
+
+.search {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px 0;
+    /* border: 1px solid black; */
+}
+ 
+.search input {
+    height: 40px;
+    margin-bottom: 10px;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search .search__btn {
+    color: white;
+    font-size: 0.9;
+    font-weight: bold;
+    background: black;
+    height: 40px;
+    width: 14%;
+    border-radius: 3px;
+    border: none;
+}
+
+/* section .a-o-w{
+    background: #363636;
+    padding: 20px 5px; 
+    border: 1px solid red;
+} */

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bree Serif', serif;
+    height: 100vh;
+}
+
+.container {
+    font-family: 'Bree Serif', serif;
+    height: 100%;
+    background: rgb(17, 17, 17);
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#results_container {
+    color: white;
+    background-color: #2D5373;
+    min-height: 150px;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.error__article_404 {
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.result__box {
+    color: black;
+    background-color: gray;
+    height: 120px;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}

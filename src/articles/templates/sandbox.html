@@ -1,0 +1,23 @@
+{% extends 'base/article_base.html' %}
+
+{% block content %}
+    <div class="content__box">
+        <div class="header_box">
+            <h1>Sandbox Template</h1>
+            <button id="upload_btn" name="upload_docs">Upload</button>
+        </div>
+        <div class="article_form_box">
+            <form class="ar_form" action="" method="POST">
+                {% csrf_token %}
+                {{ form.media }}
+                <p>{{form.title}}</p>
+                <p>{{form.author}}</p>
+                <p>{{form.category}}</p>
+                <div class="body">
+                    {{form.body}}
+                </div>
+                <button id="p_btn" name="publish_btn">Publish</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

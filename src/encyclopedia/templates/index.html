@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>SOHA.</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav__links">
+                    <a href="{% url 'sandbox' %}" class="link">Sandbox</a>
+                    <a href="" class="link">Login</a>
+                </div>
+                <button class="lang-btn btn">Lang</button>
+            </nav>
+            <div class="hero">
+                <div class="logo">
+                    <a href=""{% url 'home' %}"" id="logo">SOHA.</a>
+                </div>
+                <div class="hero__txt">
+                    <span class="hr hr-1">Archive</span>
+                    <span class="hr hr-2">Search Engine</span>
+                    <span class="hr hr-3">Encyclopedia</span>
+                </div>
+                <div class="slogan">
+                    <p>For All things <span>SOMALIA</span></p>
+                </div>
+                <div class="search">
+                    <form action="{% url 'results' %}">
+                        <input class="search__input" type="text" placeholder="Search..." required name="query">
+                        <input class="search__btn" type="submit">
+                    </form>
+                    <br><small>t/{search} for the history related search*</small>
+                </div>
+            </div>
+        </header>
+        <section class="a-o-w">
+            <div class="a-o-w__box">
+                <h2>title</h2>
+                <small>author</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam esse error 
+                praesentium neque ipsa dicta, explicabo molestias, corrupti officia expedita 
+                quo maiores optio soluta odio saepe ad voluptatibus facere quaerat?</p>
+            </div>
+        </section>
+    </div>
+    {% include 'base/footer.html' %}
+</body>
+</html>

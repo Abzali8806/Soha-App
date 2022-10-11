@@ -1,0 +1,66 @@
+/* footer styling */
+
+/* COmponent Layout */
+/* 
+footer {
+    color: white;
+    background: black;
+    height: 350px;
+    display: grid;
+    grid-template-areas: "s l l r"
+                         "a l l r"
+                         "o o o o";
+}
+footer a {
+    color: white;
+    font-weight: normal;
+}
+
+.logo {
+    grid-area: l;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.services {
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assistance {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roles {
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__icon__links {
+    grid-area: o;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+/* Links styling */
+.footer__links h3 {
+    margin-bottom: 15px;
+}
+
+.footer__link {
+    margin-bottom: 10px;
+} */

@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+    <h1>Article</h1>
+    <div class="article-box">
+        <h2>{{ data.title }}</h2>
+        <small>{{ data.author }}</small>
+        <p>{{ data.body }}</p>
+    </div>
+{% endblock %}
